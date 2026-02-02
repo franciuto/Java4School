@@ -16,7 +16,7 @@ public class Tecnico extends Personale {
     @Override
     public double getCostoOrario(int annoCorrente) {
         if (!this.interno) {
-            return 0; // Solo tecnici interni hanno costo orario
+            return 0; 
         }
 
         double costoBase;
