@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+
+<BorderPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="Main">
+    <center>
+        <VBox style="-fx-padding: 20; -fx-alignment: center;">
+            <Label text="Welcome to JavaFX Scene Builder"
+                   style="-fx-font-size: 18; -fx-font-weight: bold;"/>
+            <Label text="Edit this FXML file with Scene Builder"
+                   style="-fx-padding: 10; -fx-font-size: 14;"/>
+        </VBox>
+    </center>
+</BorderPane>
