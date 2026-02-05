@@ -19,7 +19,7 @@ public class Main extends Application {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("MainWindow.fxml"));
         BorderPane root = loader.load();
 
-        Scene scene = new Scene(root, 600, 400);
+        Scene scene = new Scene(root);
         primaryStage.setScene(scene);
         primaryStage.setResizable(false);
         primaryStage.show();
