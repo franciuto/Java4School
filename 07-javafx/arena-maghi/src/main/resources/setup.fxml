@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox alignment="CENTER" spacing="15" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="SetupController">
+    <padding>
+        <Insets top="30" right="30" bottom="30" left="30"/>
+    </padding>
+
+    <Label text="Arena dei Maghi"/>
+
+    <Label text="Numero di giocatori (2-4):"/>
+
+    <ComboBox fx:id="cmbNumero" promptText="Scegli..." onAction="#onNumeroChanged"/>
+
+    <VBox fx:id="boxNomi" alignment="CENTER" spacing="8"/>
+
+    <Button text="Inizia Battaglia" onAction="#onStartClicked"/>
+
+    <Label fx:id="lblErrore" textFill="RED"/>
+</VBox>

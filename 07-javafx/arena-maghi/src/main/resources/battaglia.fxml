@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox fx:id="root" spacing="10" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="BattagliaController">
+    <padding>
+        <Insets top="15" right="15" bottom="15" left="15"/>
+    </padding>
+
+    <Label fx:id="lblTurno" text="Turno 1"/>
+
+    <VBox fx:id="panelStats" spacing="5">
+        <padding>
+            <Insets top="10" right="10" bottom="10" left="10"/>
+        </padding>
+    </VBox>
+
+    <VBox spacing="8">
+        <padding>
+            <Insets top="10" right="10" bottom="10" left="10"/>
+        </padding>
+
+        <Label fx:id="lblMagoCorrente" text="Turno di: ..."/>
+
+        <Label fx:id="lblInfo"/>
+
+        <HBox spacing="10" alignment="CENTER_LEFT">
+            <ComboBox fx:id="cmbAzione" promptText="Scegli azione..." maxWidth="200"
+                      onAction="#onAzioneChanged"/>
+            <ComboBox fx:id="cmbSpell" promptText="Scegli incantesimo..." maxWidth="200"/>
+            <ComboBox fx:id="cmbBersaglio" promptText="Scegli bersaglio..." maxWidth="200"/>
+            <Button fx:id="btnConferma" text="Conferma" onAction="#onConfermaClicked"/>
+        </HBox>
+    </VBox>
+
+    <Label text="Log:"/>
+    <ListView fx:id="listLog" prefHeight="200"/>
+</VBox>
